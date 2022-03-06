@@ -1,0 +1,52 @@
+/* Strat Header */
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right; } }
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right; } }
+.header .navbar li {
+  float: right; }
+  @media (max-width: 767px) {
+    .header .navbar li {
+      float: none;
+      text-align: right; } }
+
+/* End Header */
+/* Strat Home Page */
+/* strat servicses */
+@media (min-width: 992px) {
+  .Servicese .serv-box {
+    float: right; } }
+
+/* End servicses */
+/* strat  Our-player  */
+@media (min-width: 768px) {
+  .Ourplayer .pleyer-box {
+    float: right; } }
+
+/* End Our-player */
+/* start lorem-items */
+.lorem .lorem-box {
+  float: right; }
+
+/* End lorem-items */
+/* End Home Page */
+/* start footer */
+footer .glery, footer .info, footer .contect {
+  float: right; }
+@media (min-width: 768px) {
+  footer .glery .image-box img {
+    float: right; } }
+@media (min-width: 768px) {
+  footer .glery .image-box .text {
+    float: right; } }
+footer .copyright .text {
+  float: right; }
+footer .copyright .author {
+  float: right; }
+
+/* End footer */
+
+/*# sourceMappingURL=home-rtl.css.map */

@@ -1,0 +1,82 @@
+.header{
+overflow: hidden;
+ padding: 20px 0;
+border-bottom: 1px solid $redColor;
+    .logo{
+     position: relative;
+        
+        @media #{$minsmall}{
+            width: 100%;
+            float: none;
+            text-align: center;
+            order: 2;
+        }
+        
+         @media #{$minmedium}{
+            width: 30%;
+            float: left;
+            text-align: $text-left;
+        }
+        
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px
+        }
+        
+        p{
+            
+        }
+    }
+    
+    .navbar{
+    background-color: $redColor;
+    border-radius: 15px;
+      overflow: hidden;
+        
+      @media #{$minsmall}{
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+          display: block !important;
+        }
+        
+         @media #{$minmedium}{
+             width: 70%;
+             float: $float-left;
+             margin-top: 1em;
+        }
+        
+        @media #{$maxmobile}{
+        display:none;
+        border-radius: none;
+    }
+        
+        li{
+            width:20%;
+            float: $float-left;
+            font-size: 18px;
+            text-align: center;
+            
+            @media #{$maxmobile}{display:block;
+                   float: none;
+                   width: 100%;
+                text-align: $text-left;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: none;
+                }
+            a{
+                color:#fff;
+                text-decoration: none;
+                display: block;
+                padding: 20px 10px;
+                transition-duration: $transition;
+        
+                &:hover{
+                    color: #333;
+                } 
+                &:active{transform: translateY($tranlate)}
+            }  
+        }
+    }
+}

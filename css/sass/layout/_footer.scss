@@ -1,0 +1,130 @@
+/* start footer */
+
+footer{
+    background-color: #e2e2e2;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .glery, .info, .contect{
+        float: $float-left;
+        
+    }
+    
+    .glery{
+        width: 50%;
+        @media #{$maxsmall}{
+            width: 100%;
+        }
+        
+        @media #{$minmedium}{
+            width: 50%;
+        }
+        .image-box{
+           overflow: hidden;
+            img{
+                @media #{$minsmall} {float: $float-left}
+                
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+            
+            .text{
+                @media #{$minsmall} {float: $float-left;  margin-right: 15px;
+                margin-left: 15px; width: calc(100% - 180px);}
+                h4{
+                    color: $redColor;
+                    margin: 20px 0 0;
+                }
+                
+                p{
+                    color: #888;
+                    line-height: 1.5;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    
+    .info{
+        @media #{$minsmall}{
+            width: 50%;
+        }
+        
+        @media #{$minmedium}{
+            width: 25%;
+        }
+        
+        @media #{$maxmobile}{
+            float: none;
+            text-align: center;
+        }
+        
+        ul{
+            color: #888;
+            line-height: 1.8;
+            
+            li{
+                
+                span{color: $redColor;}
+            }
+        }
+    }
+    
+    .contect{
+          @media #{$minsmall}{
+            width: 50%;
+        }
+        
+        @media #{$minmedium}{
+            width: 25%;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            
+            border: 1px solid #888;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+            outline: none;
+           
+        }
+        
+        textarea{height: 250px; resize: none}
+    }
+    
+    h3{
+        color: #444;
+        font-weight: normal;
+    }
+    
+    .copyright{
+        
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        overflow: hidden;
+        color: #888;
+        margin-top: 30px;
+        
+        .text{
+            float: $float-left;
+            width: 50%;
+            
+            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-left}
+        }
+        
+        
+        .author{
+            float: $float-left;
+            width: 50%;
+            text-align: $text-right;
+            
+            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-left; margin-top: 40px;}
+        }
+    }
+}
+
+/* End footer */

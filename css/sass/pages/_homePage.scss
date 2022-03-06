@@ -1,0 +1,150 @@
+/* Strat slider */
+
+.slider{
+    q{
+      font-size: 20px;
+        line-height: 1.7;
+        font-style: initial;
+        font-weight: bold;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    img{
+       
+        max-width: 100%;
+        max-height: 40%;
+    }
+    
+    .bullets{
+       text-align: center;
+        li{
+           display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $texColor;
+            border-radius: 50%;
+            border: 3px solid $texColor;
+            transition-duration: $transition;
+            cursor: pointer;
+            
+            &.active,
+            &:hover
+            {border-color: #333; background-color: #fff}
+        }
+    }
+}
+/* End slider */
+
+/* strat servicses */
+
+.Servicese{
+    
+    .serv-box{
+        @media #{$minmedium}{
+         &:not(:last-opf-type){padding-right: 20px};  
+        float: $float-left;
+        width: (100% / 3);
+        }
+        
+        @media #{$maxmobile}{
+            
+            width: 100%;
+            float: none;
+            
+            i{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .title{
+            
+        color: #666;
+             i{font-size: 30px; position: relative; top: 4px; margin-right: 6px; color:  $redColor}
+        }
+        
+        
+        .disk{
+            color:#777;
+            line-height: 1.4;
+        }
+        .link{
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+
+/* End servicses */
+
+
+/* strat  Our-player  */
+
+.Ourplayer{
+    
+    .pleyer-box{ 
+        @media #{$minsmall}{
+            float: $float-left;
+             width: (100% / 2);
+            margin-bottom: 40px;
+        }
+        
+         @media #{$minmedium}{
+             width: (100% / 3);
+            margin-bottom: 40px;
+            text-align: $text-left;
+             padding-left: 20px;
+             padding-right: 20px;
+        }
+        
+          @media #{$minlarge}{
+             width: (100% / 4);
+              margin-bottom: 0;
+        }
+        
+         @media #{$maxmobile}{
+            margin-bottom: 40px;
+        }
+    
+        img{
+            width: 99%;
+            margin: 1%;
+        }
+        
+        .plyer-title{
+            
+        color: #666;
+        font-weight: normal;
+        
+        
+            span{font-weight: bold}
+        }
+        
+        
+        .plyer-disk{
+            color:#777;
+            line-height: 1.4;
+        }
+        .plyer-link{
+            color: $redColor;
+            text-decoration: none
+        }
+    }
+}
+
+/* End Our-player */
+
+/* start lorem-items */
+.lorem{
+    .lorem-box{
+        float: $float-left;
+        width: (94% / 3);
+        &:not(:last-of-type){margin-right: 3%}
+        @media #{$maxmobile}{width: 100%; float: none}
+        img{max-width: 100%}
+    }
+}
+/* End lorem-items */

@@ -1,0 +1,23 @@
+.heaad-with-border{
+    position: relative;
+    
+    h2{
+    background-color: $redColor;
+    color: #fff;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 16px;
+    max-width: 300px;
+    padding: 10px 15px;
+    &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $redColor;
+    left: 0;
+    top: 50%;
+    z-index: -1
+    }
+}
+}

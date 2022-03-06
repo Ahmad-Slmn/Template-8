@@ -1,0 +1,34 @@
+*{
+    @include Prefixer(box-sizing, border-box, webkit moz o)
+}
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    
+    @media #{$minsmall} {
+        
+        width:750px
+    }
+    
+     @media #{$minmedium} {
+         
+        width:970px
+    }
+    
+    @media #{$minlarge} {
+        width:1170px
+    }
+}
+
+.claerfixed{clear: both}
+
+
+.text-center-xs{
+    @media #{$maxmobile}{
+        
+        text-align: center
+    }
+}

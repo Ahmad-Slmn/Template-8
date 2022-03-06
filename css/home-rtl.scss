@@ -1,0 +1,115 @@
+@import 'sass/helpers/varibles';
+
+$float-left: right;
+
+$float-right: left;
+
+$text-right: left;
+
+$text-left: right;
+
+/* Strat Header */
+.header{
+
+    .logo{
+         @media #{$minmedium}{
+             
+            float: $float-left;
+             
+            text-align: $text-left;
+        }
+    }
+    
+    .navbar{
+         @media #{$minmedium}{
+             float: $float-left;
+        }
+        
+        li{
+            float: $float-left;
+            
+            @media #{$maxmobile}{
+                   float: none;
+                   text-align: $text-left;
+                   }
+        }
+    }
+}
+
+/* End Header */
+
+
+/* Strat Home Page */
+
+/* strat servicses */
+
+.Servicese{
+    
+    .serv-box{
+        @media #{$minmedium}{ float: $float-left}
+    }
+}
+
+/* End servicses */
+
+
+/* strat  Our-player  */
+
+.Ourplayer{
+    
+    .pleyer-box{ 
+        @media #{$minsmall}{
+            float: $float-left;
+        }
+        
+    }
+}
+
+/* End Our-player */
+
+/* start lorem-items */
+.lorem{
+    .lorem-box{
+        float: $float-left;
+    }
+}
+/* End lorem-items */
+
+/* End Home Page */
+
+/* start footer */
+footer{
+    .glery, .info, .contect{
+        float: $float-left;
+    }
+    
+    .glery{
+
+        .image-box{
+
+            img{
+                @media #{$minsmall} {float: $float-left}
+            }
+            
+            .text{
+                @media #{$minsmall} {float: $float-left}
+                
+
+            }
+        }
+    }
+    
+    .copyright{
+        .text{
+            float: $float-left;
+        }
+        
+        
+        .author{
+            float: $float-left;
+        
+        }
+    }
+}
+
+/* End footer */
