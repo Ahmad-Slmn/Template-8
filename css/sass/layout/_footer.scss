@@ -113,7 +113,7 @@ footer{
             float: $float-left;
             width: 50%;
             
-            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-left}
+            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-center}
         }
         
         
@@ -122,7 +122,7 @@ footer{
             width: 50%;
             text-align: $text-right;
             
-            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-left; margin-top: 40px;}
+            @media #{$maxmobile}{float: none; width: 100%; text-align: $text-center; margin-top: 40px}
         }
     }
 }

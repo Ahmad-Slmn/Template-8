@@ -29,6 +29,10 @@ html {
     display: none
 }
 
+img {
+    object-fit: cover
+}
+
 .container {
     margin: auto;
     padding-left: 15px;
@@ -226,7 +230,8 @@ ol {
 }
 
 .slider img {
-    display: none
+    display: none;
+    border-radius: 10px
 }
 
 .slider img.active {
@@ -337,6 +342,7 @@ ol {
 .Ourplayer .pleyer-box img {
     width: 99%;
     margin: 1%;
+    border-radius: 10px
 }
 
 .Ourplayer .pleyer-box .plyer-title {
@@ -581,7 +587,7 @@ footer .copyright .text {
     footer .copyright .text {
         float: none;
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -595,7 +601,7 @@ footer .copyright .author {
     footer .copyright .author {
         float: none;
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-top: 40px;
     }
 }
